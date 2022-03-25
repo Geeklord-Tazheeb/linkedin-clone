@@ -1,5 +1,13 @@
 .header{
+position:sticky;
+top:0;
 display: flex;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 100%;
+justify-content: space-evenly;
+border-bottom: 0.1px solid grey;
+z-index: 999;
 }
 
 .header__left{
@@ -30,5 +38,5 @@ margin-right: 10px;
 }
 
 .header__right{
-
+    display: flex;
 }

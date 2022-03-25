@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
@@ -8,15 +9,17 @@ function App() {
    
         {/* Header */}
       <Header/>
-     {/* App body */}
-
+    
+        {/* App body */}
+      <div className="app__body">
+      <Sidebar/>
         {/* Sidebar */}
 
         {/* Feeds */}
         
         {/* Widgets */}
 
-
+        </div>
     </div>
   );
 }
