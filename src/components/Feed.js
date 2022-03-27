@@ -7,8 +7,8 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import InputOptions from "./InputOption";
 import Post from "./Post";
-import firebase from 'firebase'
 
+import firebase from 'firebase'
 import { db } from "./firebase";
 
 function Feed() {
@@ -30,11 +30,11 @@ function Feed() {
     e.preventDefault();
     
     db.collection('posts').add({
-      name: 'Taazheeb Shamsi',
-      description: 'This is test',
+      name: 'Tazheeb Shamsi',
+      description: 'Full Stack Developer',
       message: input,
       photoUrl:'',
-      timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
+      timeStamp: firebase.firestore.FieldValue.serverTimestamp()
     });
     setInput("")
   };
@@ -45,9 +45,9 @@ function Feed() {
         <div className="feed__input">
           <CreateIcon />
           <form action="">
-            <input value= {input} onChange={e => setInput(e.target.value)} 
+            <input value= {input} onChange= {e => setInput(e.target.value)} 
             type="text" placeholder="Start a post" />
-            <button onClick="sendPost" type="submit">
+            <button onClick={sendPost} type="submit">
               Send
             </button>
           </form>
