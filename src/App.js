@@ -26,8 +26,8 @@ function App() {
         //user not logged 
         dispatch(logout());
       }
-    })
-  },[])
+    });
+  }, []);
 
   return (
     <div className="App">      
