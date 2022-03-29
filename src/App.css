@@ -1,10 +1,14 @@
 .app{
     display: flex;
 
+
 }
 
 .app__body{
     display: flex;
-    background-color: rgb(243 242 239);
-
+    margin-top: 35px;
+    max-width: 1200px;
+    margin-left: 160px;
+    margin-right: 20px;
+    
 }

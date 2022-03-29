@@ -6,8 +6,9 @@ padding-top: 10px;
 padding-bottom: 10px;
 width: 100%;
 justify-content: space-evenly;
-border-bottom: 0.1px solid grey;
+border-bottom: 0.1px solid lightgrey;
 z-index: 999;
+background-color: #fff;
 }
 
 .header__left{
